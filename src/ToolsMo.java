@@ -9,7 +9,7 @@ public class ToolsMo {
 
     public String getAnswer(String order) {
         scan = new Scanner(System.in);
-        System.out.println(order); //change that to a button
+                buttons.customizedButton(50, 3, order); //change that to a button
         String result = scan.nextLine();
         return result;
     }

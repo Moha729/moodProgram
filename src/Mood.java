@@ -18,7 +18,15 @@ public class Mood {
         return moodTitle;
     }
 
-  /*  public Mood createMood() {
+    public String getMoodTitle() {
+        return moodTitle;
+    }
+
+    public void setMoodTitle(String moodTitle) {
+        this.moodTitle = moodTitle;
+    }
+
+    /*  public Mood createMood() {
         tools = new ToolsMo();
         String moodTitle = tools.getAnswer("You are creating a new mood \n give this mood a name");
 

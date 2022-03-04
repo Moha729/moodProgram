@@ -4,6 +4,8 @@ public class TopHandler {
 
     ToolsMo tools;
 
+    HandlerMood moodHandler;
+
     public User createUser(){
         tools = new ToolsMo();
         String userName = tools.getAnswer("What is the Name of the User");
@@ -18,6 +20,9 @@ public class TopHandler {
         System.out.println(tools.buttons.welcomeText("Welcome "+user.getUserName()));
         //import presentation
 
+        moodHandler  = new HandlerMood();
+
+        moodHandler.runMoodMenu();
         //show moods
         //choose a mood
         //create new mood
